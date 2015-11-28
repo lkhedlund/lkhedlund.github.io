@@ -13,167 +13,317 @@
     <!-- Dev Icons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="./stylesheets/material.min.css">
-    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/resume.css">
     <script src="./javascripts/material.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="./javascripts/chart.js"></script>
   </head>
 
-  <body class="mdl-resume mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Lars Hedlund</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h4>Web Developer</h4>
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Summary</a>
-          <a href="#skills" class="mdl-layout__tab">Skills</a>
-          <a href="#projects" class="mdl-layout__tab">Projects</a>
-          <a href="#technologies" class="mdl-layout__tab">Technologies</a>
-          <a href="#education" class="mdl-layout__tab">Education</a>
-        </div>
-      </header>
+<body class="mdl-resume mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h4>Lars Hedlund, <em>Python Web Developer</em></h4>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
 
-      <main class="mdl-layout__content">
-        <div class="mdl-grid mdl-color--grey-200">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="overview">
-            <header class="section__profile mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
-              <!-- <img src="./images/profile.jpg" id="profile"/> -->
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Summary</h4>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+        <a href="#education" class="mdl-layout__tab">Education</a>
+        <a href="#experience" class="mdl-layout__tab">Experience</a>
+      </div>
+
+
+    </header>
+    <main class="mdl-layout__content">
+
+      <!-- START OF OVERVIEW TAB -->
+      <div class="mdl-layout__tab-panel is-active" id="overview">
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <header class="section__profile mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone"></header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+            <div class="mdl-cell--hide-desktop">
+              <h3>Lars Hedlund, <em>Python Web Developer</em></h3>
+            </div>
+              <h4>Summary</h4>
+              <p>
+                I breathe clean code like fresh mountain air. My background is extensive, spanning from higher education to freelance web development. I am a master of Arts (literally), a lover of literature, and pick up new technologies suprisingly quickly. I work exceptionally well with little-to-no direction and aim to be your next Python full-stack developer!
+                <ul>
+                  <li>
+                    <a href="mailto:lkhedlund@outlook.com">lkhedlund@outlook.com</a>
+                  </li>
+                </ul>
+              </p>
+            </div>
+            </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+            <i class="material-icons">forum</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+            <li class="mdl-menu__item">604-401-6974</li>
+            <li class="mdl-menu__item"><a href="mailto:lkhedlund@outlook.com">lkhedlund@outlook.com</a></li>
+            <li class="mdl-menu__item"><a href="https://ca.linkedin.com/in/lkhedlund">LinkedIn</a></li>
+          </ul>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <h4 class="mdl-cell mdl-cell--12-col">Projects</h4>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <a href="https://github.com/lkhedlund/quick-quiz">
+                  <h4><i class="devicon-javascript-plain"></i> Quick Quiz</h4>
+                </a>
                 <p>
-                  I breathe clean code like fresh mountain air. My background is extensive, spanning from higher education to freelance web development. I am a Master of Arts (literally), a lover of literature, and driven towards personal development and achievement. I work exceptionally well with little-to-no direction and aim to join your next Python project!
+                  Web modules containing quizzes, flashcards, and other apps to help teachers connect with students.
+                </p>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <a href="https://github.com/lkhedlund/go-for-gold">
+                  <h4><i class="devicon-ruby-plain"></i> Go For Gold</h4>
+                </a>
+                <p>
+                  Mobile responsive fitness-tracking app that lets you compete with your friends for points and bragging rights.
+                </p>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <a href="https://github.com/lkhedlund/go-for-gold">
+                  <h4><i class="devicon-css3-plain-wordmark"></i>Lighthouse Labs Coursework</h4>
+                </a>
+                <p>
+                  All of the smaller projects and coursework I completed while at Lighthouse Labs.
                 </p>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">LinkedIn</li>
-              <li class="mdl-menu__item" >Twitter</li>
-              <li class="mdl-menu__item">Riipen</li>
-            </ul>
-          </section>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="skills">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Projects</h4>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <a href="https://github.com/lkhedlund/quick-quiz">
-                    <h4><i class="devicon-javascript-plain"></i> Quick Quiz</h4>
-                  </a>
-                  <p>
-                    Web modules containing quizzes, flashcards, and other apps to help teachers connect with students.
-                  </p>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <a href="https://github.com/lkhedlund/go-for-gold">
-                    <h4><i class="devicon-ruby-plain"></i> Go For Gold</h4>
-                  </a>
-                  <p>
-                    Mobile responsive fitness-tracking app that lets you compete with your friends for points and bragging rights.
-                  </p>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <a href="https://github.com/lkhedlund/go-for-gold">
-                    <h4><i class="devicon-css3-plain-wordmark"></i><i class="devicon-html5-plain-wordmark"></i>Lorem ipsum dolor sit amet</h4>
-                  </a>
-                  <p>
-                    Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis.
-                  </p>
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/lkhedlund/" class="mdl-button" target="_blank">See more projects</a>
-              </div>
+            <div class="mdl-card__actions">
+              <a href="https://github.com/lkhedlund/" class="mdl-button" target="_blank">See more projects</a>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <h4 class="mdl-cell mdl-cell--12-col">Skills</h4>
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                <h4>
+                  <i class="devicon-python-plain"></i>
+                  <i class="devicon-ruby-plain"></i>
+                  <i class="devicon-javascript-plain"></i>
+                </h4>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <h5>Programming Languages</h5>
+                <p>
+                  I am skilled in a number of programming languages, with 8 months of Python (4 month coursework), 6 months of Javascript, and 2 months of Ruby. I pick up new languages fast and easily.
+                </p>
+              </div>
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                <h4>
+                  <i class="devicon-django-plain"></i>
+                  <i class="devicon-rails-plain"></i>
+                  <i class="devicon-bootstrap-plain"></i>
+                </h4>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <h5>Frameworks</h5>
+                <p>
+                  Django is my framework of choice; I am also skilled in Rails and Sinatra, and CSS frameworks like Bootstrap, Material Design Lite, and Foundation.
+                </p>
+              </div>
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                <h4>
+                  <i class="devicon-photoshop-plain"></i>
+                  <i class="devicon-illustrator-plain"></i>
+                  <i class="devicon-wordpress-plain"></i>
+                  <i class="devicon-drupal-plain"></i>
+                </h4>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <h5>Software</h5>
+                <p>
+                  Exceptional technical skills in SPSS, Google Analytics, Content Management Systems (D2L, Blackboard, Wordpress, Drupal), and online portal administration. I am also trained in a variety of programs, including Adobe Photoshop, Illustrator, and InDesign; and Microsoft Publisher and Excel.
+                </p>
+              </div>
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                <h4>
+                  <i class="material-icons">group</i>
+                  <i class="material-icons">cake</i>
+                </h4>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <h5>Leadership</h5>
+                <p>
+                  I am an experienced instructor, responsible for training student staff in Supplemental Instruction, training professional staff in database administration, delivering seminars to students, and developing teaching and learning resources.
+                </p>
+              </div>
 
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="skills">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Skills</h4>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <h4>
-                    <i class="devicon-python-plain"></i>
-                    <i class="devicon-ruby-plain"></i>
-                    <i class="devicon-javascript-plain"></i>
-                  </h4>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Programming Languages</h5>
-                  <p>
-                    I have proficiency in a mixture of programming languages, with 8 months of Python, 6 months of Javascript, and 2 months of Ruby. The bonus? I pick up <em>fast</em>; here I come C#!
-                  </p>
-                </div>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <h4>
-                    <i class="devicon-drupal-plain"></i>
-                    <i class="devicon-django-plain"></i>
-                    <i class="devicon-rails-plain"></i>
-                    <i class="devicon-bootstrap-plain"></i>
-                  </h4>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Frameworks</h5>
-                  <p>
-                    Frameworks make life easy, and I try to learn as much as I can from each one. Django is my framework of choice, and I'm converting some of my projects over to show much much I enjoy using it.
-                  </p>
-                </div>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <h4>
-                    <i class="devicon-photoshop-plain"></i>
-                    <i class="devicon-illustrator-plain"></i>
-                    <i class="devicon-wordpress-plain"></i>
-                  </h4>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Software</h5>
-                  <p>
-                    I've always been the go-to in all of my positions for helping with new software and apps. Everything is self-taught, and my proficiency is better for it.
-                  </p>
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
+          </div>
+        </section>
+
+        <section class="section--footer mdl-grid"></section>
+      </div>
+
+      <!-- START OF EDUCATION TAB -->
+
+      <div class="mdl-layout__tab-panel" id="education">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--12-col">
+            <h4>Education and Certificates</h4>
+            <h5 id="lhl">Web Development Bootcamp</h5>
+            <h6><em>Lighthouse Labs, 2015</em></h6>
+            <p>
+              This 8 week intensive course taught me a ton of web development tips, tricks, and techniques including, but not limited to, the following:
+              <ul>
+                <li>
+                  Ruby, Gems, RSpec, OOP, and TDD
+                </li>
+                <li>
+                  ORMS, ActiveRecord, Sinatra, RESTful Actions, HTTP Protocols
+                </li>
+                <li>
+                  MVC Architecture, Rails, routes, and the asset pipeline
+                </li>
+                <li>
+                  Javascript, jQuery, SASS, AJAX, JSON, Grunt, and Bower.
+                </li>
+              </ul>
+            </p>
+            <h5 id="tech">Professional Writing Certificate specializing in Business and Technical Writing</h5>
+            <h6><em>University of Calgary Continuing Education, 2014</em></h6>
+            <p>
+              A 200-hour program focused on improving numerous skills including composition, grammar, copyediting, proofreading and technical writing proficiency. Coursework included,
+              <ul>
+                <li>
+                  Technical Writing, Copyediting and Proofreading, Science Writing, and Document Design.
+                </li>
+              </ul>
+            </p>
+            <h5 id="SI">Supplemental Instruction Supervisor Workshop</h5>
+            <h6><em>University of Missouri-Kansas City, 2014</em></h6>
+              <p>
+                A four-day course focused on creating effective and efficient SI supervisors through the following topics:
+                <ul>
+                  <li>
+                    Procedures for selecting SI courses and SI leaders, roles of supervisors and leaders, evaluation and funding of the program, training and supervision of SI leaders, theoretical frameworks underlying the SI model, and using effective learning strategies.
+                  </li>
+                </ul>
+              </p>
+            <h5 id="ma">Master of Arts, English Language and Literature</h5>
+            <h6><em>University of Calgary, 2011</em></h6>
+            <ul>
+              <li>
+                Presented at the 2010 Free Exchange Graduate Conference
+              </li>
+              <li>
+                Completed the Instructional Skills Workshop through the Teaching and Learning Centre.
+              </li>
+              <li>
+                Received an SSHRC grant from the Government of Canada.
+              </li>
             </ul>
-          </section>
-        <footer class="demo-footer mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-            <ul class="mdl-mini-footer--link-list">
-              <li><a href="#">Lars Hedlund</a></li>
+            <h5 id="ba">Bachelor of Arts, English Language and Literature</h5>
+            <h6><em>University of Calgary, 2009</em></h6>
+            <ul>
+              <li>
+                Received the Jason Lang Scholarship for two consecutive years.
+              </li>
             </ul>
           </div>
-        </footer>
-      </main>
-    </div>
-    <a href="https://github.com/lkhedlund/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="devicon-github-plain"></i> View Github</a>
-    <script src="./javascripts/material.min.js"></script>
-  </body>
+        </section>
+        <section class="section--footer mdl-grid"></section>
+      </div>
+
+
+      <!-- START OF EXPERIENCE TAB -->
+
+      <div class="mdl-layout__tab-panel" id="experience">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--12-col">
+            <h4>Experience</h4>
+            <!-- <ul class="toc">
+              <a href="#broadview">Freelance Web Developer</a>
+              <a href="#pass">SI Coordinator</a>
+              <a href="#wss">Writing Tutor</a>
+              <a href="#cnax">Web Developer and Research Assistant</a>
+            </ul> -->
+            <h5 id="broadview">Freelance Web Developer</h5>
+            <h6><em>August 2015 - Present</em></h6>
+            <ul>
+              <li>
+                Developing a new version of the "Old English Reader" companion site, located at <a href="http://oegrammar.ca/" target="_blank">http://oegrammar.ca/</a>, which includes coding <a href="https://github.com/lkhedlund/quick-quiz" target="_blank">new quiz modules</a> to replace outdated Java Applets, designing and applying a new site template, and improving the text and glossary display.
+              </li>
+              <li>
+                Run post-launch survey asking for suggestions from students, with ongoing updates to fit feedback.
+              </li>
+              <li>
+                Expected completion December 2015 with post-launch support until April 2016.
+              </li>
+            </ul>
+            <h5 id="pass">Supplemental Instruction Coordinator (previously Student Services Coordinator)</h5>
+            <h6><em>July 2013 - June 2015</em></h6>
+            <ul>
+              <li>
+                Oversaw the Student Success Centre's (SSC) supplemental instruction program, PASS, and its student staff.
+              </li>
+              <li>
+                Supervised a team of 22 student staff and provide professional development in the form of a two-day training program, performance-focused weekly meetings, and regular session observations.
+              </li>
+              <li>
+                Completed statistical analysis (SPSS) of the program's goals and outcomes and relay this information to Faculty members and Deans.
+              </li>
+              <li>
+                Assumed responsibility for the SSC's communications, web development, and online portal administration because of my aptitude and skill with new technologies.
+              </li>
+            </ul>
+            <h5 id="wss">Writing Support Services Tutor</h5>
+            <h6><em>September 2011 - August 2012</em></h6>
+            <ul>
+              <li>
+                Helped both graduate and undergraduate students become more effective writers by suggesting improvements, such as grammar, sentence structure, or style changes.
+              </li>
+              <li>
+                Volunteered to develop and teach writing seminars on the following subjects: writing about literature, writing proposals, writing book reviews and research article critiques, revising and editing, and using the MLA format.
+              </li>
+              <li>
+                Assisted English Language Learners with language acquisition through individualized instruction.
+              </li>
+            </ul>
+            <h5 id="cnax">Web Developer and Research Assistant - The Cotton Nero A.x. Project (SSHRC funded)</h5>
+            <h6><em>May 2009 - August 2012</em></h6>
+            <ul>
+              <li>
+                Designed and coded the project's website using HTML, CSS, XML and JavaScript.
+              </li>
+              <li>
+                Assisted the lead scholars Dr. Murray McGillivray and Dr. Kenna Olsen with the annotated bibliography of the Cotton Nero A.x. Project, which involved writing annotations, editing the bibliography for spelling or formatting errors, and retrieving new articles.
+              </li>
+              <li>
+                Updated and improved the website's glyphs using Adobe Photoshop CS5.
+              </li>
+            </ul>
+            <h5>For a full work history, visit my <a href="https://ca.linkedin.com/in/lkhedlund">LinkedIn Profile</a>.</h5>
+          </div>
+        </section>
+        <section class="section--footer mdl-grid"></section>
+      </div>
+
+      <!-- END OF TABS -->
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">Thanks for visiting!</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="https://twitter.com/swedishsuprstar">Twitter</a></li>
+            <li><a href="https://ca.linkedin.com/in/lkhedlund">LinkedIn</a></li>
+            <li><a href="mailto:lkhedlund@outlook.com">Email</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <a href="https://github.com/lkhedlund/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="devicon-github-plain"></i> View Github</a>
+  <script src="./javascripts/material.min.js"></script>
+</body>
 </html>
