@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #view-source {
   position: fixed;
   display: block;
@@ -24,11 +28,6 @@ html, body {
   color: white;
 }
 
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 .mdl-resume .mdl-layout__header-row {
   padding-left: 40px;
 }
