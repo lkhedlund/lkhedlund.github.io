@@ -28,6 +28,10 @@ a:link {
   color: white;
 }
 
+.highlight {
+  color: rgb(255,64,129);
+}
+
 .mdl-resume .mdl-layout__header-row {
   padding-left: 40px;
 }
