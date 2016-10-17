@@ -130,7 +130,7 @@ a:link {
 }
 .mdl-resume section > .section__profile {
   min-height: 200px;
-  background: url(../images/profile.jpg) no-repeat center;
+  background: url(../images/profile.png) no-repeat center;
   background-size: cover;
 }
 .mdl-resume section > header > .material-icons {
