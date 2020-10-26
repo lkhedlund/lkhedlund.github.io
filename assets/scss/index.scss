@@ -1,28 +1,42 @@
+@import 'variables';
+
 body {
+    font-family: $font-family-base;
     color: black;
     font-size: 18px;
 }
 
 h1 {
     font-size: 6rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 2rem;
 }
 
 .container {
     display: grid;
-    grid-template-columns: auto 20px 20px 400px 400px 20px 20px auto;
-    grid-template-rows: 20px 20px auto 20px 20px;
+    grid-template-columns: $h-spacer auto $h-spacer;
+    grid-template-rows: $v-spacer auto $v-spacer;
+
+    @media (min-width: 768px) {
+        grid-template-columns: auto $h-spacer $h-spacer 400px 400px $h-spacer $h-spacer auto;
+        grid-template-rows: $v-spacer $v-spacer auto $v-spacer $v-spacer;
+    }
 }
 
 .page-header {
-    grid-column: 4 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    @media (min-width: 768px) {
+        grid-column: 4 / span 1;
     grid-row: 3 / span 1;
+    }
 }
 
 hr {
     max-width: 100px;
     margin: 0;
-    border-bottom: 4px solid black;
+    border-bottom-width: 4px;
+    border-style: solid;
 }
