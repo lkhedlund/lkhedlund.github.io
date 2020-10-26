@@ -13,6 +13,16 @@ h1 {
     margin-bottom: 2rem;
 }
 
+hr {
+    max-width: 100px;
+    margin: 0;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-color: $primary;
+}
+
+// Standard elements
+
 .container {
     display: grid;
     grid-template-columns: $h-spacer auto $h-spacer;
@@ -24,6 +34,8 @@ h1 {
     }
 }
 
+// Custom components
+
 .page-header {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
@@ -34,9 +46,3 @@ h1 {
     }
 }
 
-hr {
-    max-width: 100px;
-    margin: 0;
-    border-bottom-width: 4px;
-    border-style: solid;
-}
