@@ -6,11 +6,18 @@ body {
     font-size: 18px;
 }
 
-h1 {
-    font-size: 6rem;
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5rem;
 }
 
 hr {
@@ -22,27 +29,58 @@ hr {
 }
 
 // Standard elements
-
 .container {
     display: grid;
     grid-template-columns: $h-spacer auto $h-spacer;
     grid-template-rows: $v-spacer auto $v-spacer;
+    grid-gap: 1rem;
 
-    @media (min-width: 768px) {
-        grid-template-columns: auto $h-spacer $h-spacer 400px 400px $h-spacer $h-spacer auto;
-        grid-template-rows: $v-spacer $v-spacer auto $v-spacer $v-spacer;
+    @media (min-width: 900px) {
+        grid-template-columns: auto $h-spacer 300px 300px 300px $h-spacer auto;
+        grid-template-rows: $v-spacer $offset auto $offset $v-spacer;
     }
 }
 
-// Custom components
-
-.page-header {
-    grid-column: 2 / span 1;
+// Header
+.header-inner {
+    grid-column: 2 / span 2;
     grid-row: 2 / span 1;
 
-    @media (min-width: 768px) {
-        grid-column: 4 / span 1;
-    grid-row: 3 / span 1;
+    @media (min-width: 900px) {
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 1;
     }
 }
 
+// Skills
+.skills--heading {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 1;
+}
+
+.skills--description {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.skills--lists {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 2;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .list-block {
+        padding: 1rem;
+        background: $secondary;
+        color: white;
+        flex: 1 1 200px;
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+    }
+}
