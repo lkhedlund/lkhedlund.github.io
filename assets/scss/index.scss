@@ -27,6 +27,10 @@ h2 {
     font-size: 5rem;
 }
 
+h3 {
+    font-size: 2.5rem;
+}
+
 hr {
     max-width: 100px;
     margin: 0;
@@ -34,6 +38,18 @@ hr {
     border-bottom-width: 4px;
     border-style: solid;
     border-color: $primary;
+}
+
+// General
+.heading-emphasis {
+    color: $primary;
+    font-style: italic;
+}
+
+ul.no-style {
+    padding: 0;
+    list-style: none;
+    margin: 0;
 }
 
 // Standard elements
@@ -103,15 +119,53 @@ hr {
         }
 
         ul {
-            padding: 0;
-            list-style: none;
-            margin: 0;
-
             li {
                 font-size: 0.9rem;
                 color: $grey;
                 margin-bottom: 0.5rem;
             }
         }
+    }
+}
+
+// Work
+.work--heading {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 1;
+    z-index: 20;
+}
+
+.work--lists {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 5;
+    background: $light-grey;
+    padding: 4rem 2rem;
+}
+
+.list-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project-figure {
+    margin: 0;
+    flex: 1 1 500px;
+    padding-right: 2rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.project-body {
+    flex: 1 1 400px;
+
+    li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
     }
 }

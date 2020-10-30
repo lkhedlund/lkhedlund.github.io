@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./dist/index.css">
   </head>
   <body>
-    <main class="lkh-main">
+    <main class="wrap">
         <section class="lkh-header container">
             <div class="header-inner">
                 <h1>Lars Hedlund.</h1>
@@ -31,7 +31,7 @@
             <div class="skills--lists">
                 <div class="list-block">
                     <h4>Development</h4>
-                    <ul>
+                    <ul class="no-style">
                         <li>Python</li>
                         <li>PHP</li>
                         <li>C#</li>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="list-block">
                     <h4>Frameworks</h4>
-                    <ul>
+                    <ul class="no-style">
                         <li>Django</li>
                         <li>Rails</li>
                         <li>Unity</li>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="list-block">
                     <h4>Devops</h4>
-                    <ul>
+                    <ul class="no-style">
                         <li>Azure, AWS</li>
                         <li>Linux (Ubuntu, CentOS, Red Hat)</li>
                         <li>Docker</li>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="list-block">
                     <h4>Tools</h4>
-                    <ul>
+                    <ul class="no-style">
                         <li>Webpack</li>
                         <li>git</li>
                         <li>Sass</li>
@@ -70,7 +70,37 @@
                     </ul>
                 </div>
         </section>
-
+        <section class="lkh-work container">
+            <h2 class="work--heading">Work.</h2>
+            <div class="work--lists">
+                <div class="list-project">
+                    <figure class="project-figure">
+                        <img src="./images/unbanking-cover.png">
+                    </figure>
+                    <div class="project-body">
+                        <h3>Campaigning for <span class="heading-emphasis">fair</span> regulations!</h3>
+                        <ul class="no-style">
+                            <li>Finalist in Social West's Hashtag Awards for "Best Social Media Campaign".</li>
+                            <li>Built with Django.</li>
+                            <li>Deployed on Heroku with server scaling.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-project">
+                    <figure class="project-figure">
+                        <img src="http://www.fillmurray.com/600/350">
+                    </figure>
+                    <div class="project-body">
+                        <h3>Making IT services <span class="heading-emphasis">fun</span> and bright!</h3>
+                        <ul class="no-style">
+                            <li>Suite of page-building components built with React.</li>
+                            <li>Hubspot-integrated blog for lead and engagement tracking.</li>
+                            <li>Cloudflare DDoS protection and caching.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
   </body>
 </html>
