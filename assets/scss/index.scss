@@ -4,12 +4,19 @@ body {
     font-family: $font-family-base;
     color: black;
     font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: $v-spacer;
+    line-height: 1.2;
 }
 
 h1 {
@@ -23,6 +30,7 @@ h2 {
 hr {
     max-width: 100px;
     margin: 0;
+    margin-bottom: $v-spacer;
     border-bottom-width: 4px;
     border-style: solid;
     border-color: $primary;
@@ -52,6 +60,16 @@ hr {
     }
 }
 
+.header-social {
+    a {
+        font-size: 2.5rem;
+    }
+
+    .github {
+        margin-right: 1rem;
+    }
+}
+
 // Skills
 .skills--heading {
     grid-row: 1 / span 2;
@@ -77,10 +95,23 @@ hr {
         color: white;
         flex: 1 1 200px;
 
+        h4 {
+            text-transform: uppercase;
+            padding-top: 1rem;
+            margin-top: 1rem;
+            border-top: 4px solid $primary;
+        }
+
         ul {
             padding: 0;
             list-style: none;
             margin: 0;
+
+            li {
+                font-size: 0.9rem;
+                color: $grey;
+                margin-bottom: 0.5rem;
+            }
         }
     }
 }
