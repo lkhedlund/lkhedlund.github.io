@@ -312,6 +312,17 @@ body {
 a {
   text-decoration: none;
   color: black; }
+  a.slide-up {
+    display: inline-block;
+    padding: 0.25em;
+    line-height: 1;
+    background-image: linear-gradient(to top, #29648a 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: 0% 10%;
+    transition: all 0.3s; }
+    a.slide-up:hover {
+      color: white;
+      background-position: 0% 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -332,9 +343,7 @@ hr {
   max-width: 100px;
   margin: 0;
   margin-bottom: 2rem;
-  border-bottom-width: 4px;
-  border-style: solid;
-  border-color: #2e9cca; }
+  border-bottom: 4px solid #29648a; }
 
 .heading-emphasis {
   color: #2e9cca;
@@ -364,7 +373,8 @@ ul.no-style {
       grid-row: 3 / span 1; } }
 
 .header-social a {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  background-position: 0% 0%; }
 
 .header-social .github {
   margin-right: 1rem; }
@@ -392,7 +402,7 @@ ul.no-style {
       text-transform: uppercase;
       padding-top: 1rem;
       margin-top: 1rem;
-      border-top: 4px solid #2e9cca; }
+      border-top: 4px solid #29648a; }
     .skills--lists .list-block ul li {
       font-size: 0.9rem;
       color: #aaabb8;
@@ -413,7 +423,7 @@ ul.no-style {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
 
 .project-figure {
   margin: 0;
@@ -426,7 +436,13 @@ ul.no-style {
 
 .project-body {
   flex: 1 1 400px; }
+  .project-body ul {
+    margin-bottom: 1.5rem; }
   .project-body li {
     margin-bottom: 0.5rem;
     font-size: 0.95rem; }
+
+.project-link {
+  font-size: 1.2rem;
+  font-weight: bold; }
 

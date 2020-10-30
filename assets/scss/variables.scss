@@ -6,9 +6,12 @@ $v-spacer: 2rem;
 $offset: 20px;
 
 // Colors
-$primary: #2e9cca;
+$primary: #29648a;
 $secondary: #1f2832;
 $grey: #aaabb8;
 $dark: #464866;
-$accent: #29648a;
+$accent: #2e9cca;
 $light-grey: #f0f0f0;
+
+// Components
+$border-style: 4px solid $primary;

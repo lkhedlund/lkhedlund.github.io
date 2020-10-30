@@ -10,6 +10,21 @@ body {
 a {
     text-decoration: none;
     color: black;
+
+    &.slide-up {
+        display: inline-block;
+        padding: 0.25em;
+        line-height: 1;
+        background-image: linear-gradient(to top, $primary 50%, transparent 50%);
+        background-size: 200% 200%;
+        background-position: 0% 10%;
+        transition: all 0.3s;
+    
+        &:hover {
+            color: white;
+            background-position: 0% 100%;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,14 +50,12 @@ hr {
     max-width: 100px;
     margin: 0;
     margin-bottom: $v-spacer;
-    border-bottom-width: 4px;
-    border-style: solid;
-    border-color: $primary;
+    border-bottom: $border-style;
 }
 
 // General
 .heading-emphasis {
-    color: $primary;
+    color: $accent;
     font-style: italic;
 }
 
@@ -79,6 +92,7 @@ ul.no-style {
 .header-social {
     a {
         font-size: 2.5rem;
+        background-position: 0% 0%;
     }
 
     .github {
@@ -115,7 +129,7 @@ ul.no-style {
             text-transform: uppercase;
             padding-top: 1rem;
             margin-top: 1rem;
-            border-top: 4px solid $primary;
+            border-top: $border-style;
         }
 
         ul {
@@ -146,7 +160,7 @@ ul.no-style {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project-figure {
@@ -164,8 +178,17 @@ ul.no-style {
 .project-body {
     flex: 1 1 400px;
 
+    ul {
+        margin-bottom: 1.5rem;
+    }
+
     li {
         margin-bottom: 0.5rem;
         font-size: 0.95rem;
     }
+}
+
+.project-link {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
