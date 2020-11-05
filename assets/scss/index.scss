@@ -27,6 +27,10 @@ a {
     }
 }
 
+p {
+    margin-top: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 0;
@@ -269,6 +273,7 @@ ul.no-style {
 }
 
 .contact--description {
+    padding: 2rem 1rem;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 
@@ -280,4 +285,46 @@ ul.no-style {
         grid-column: 2 / span 5;
         padding: 4rem 2rem;
     }
+
+    a {
+        font-weight: bold;
+        color: $accent;
+
+        &:hover, &focus {
+            color: lighten($accent, 10%);
+        }
+    }
+}
+
+.contact--form {
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        flex: 1 1 300px;
+        padding: 10px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    textarea {
+        flex-basis: 100%;
+    }
+
+    input[type="submit"] {
+        padding: 0.5rem 2rem;
+        border-radius: 0;
+        border: none;
+        text-transform: uppercase;
+        background: $accent;
+        color: white;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
