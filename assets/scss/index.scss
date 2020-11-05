@@ -297,6 +297,10 @@ ul.no-style {
 }
 
 .contact--form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     input[type="text"], 
     input[type="email"], 
     textarea {
@@ -323,8 +327,12 @@ ul.no-style {
 }
 
 
-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+
+// Footer 
+.lkh-footer {
+    color: $primary;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
 }

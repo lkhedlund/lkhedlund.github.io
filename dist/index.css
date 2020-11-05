@@ -527,29 +527,32 @@ ul.no-style {
     .contact--description a:hover, .contact--description afocus {
       color: #53b1d8; }
 
-.contact--form input[type="text"],
-.contact--form input[type="email"],
-.contact--form textarea {
-  flex: 1 1 300px;
-  padding: 10px;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem; }
-
-.contact--form textarea {
-  flex-basis: 100%; }
-
-.contact--form input[type="submit"] {
-  padding: 0.5rem 2rem;
-  border-radius: 0;
-  border: none;
-  text-transform: uppercase;
-  background: #2e9cca;
-  color: white; }
-
-form {
+.contact--form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  .contact--form input[type="text"],
+  .contact--form input[type="email"],
+  .contact--form textarea {
+    flex: 1 1 300px;
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem; }
+  .contact--form textarea {
+    flex-basis: 100%; }
+  .contact--form input[type="submit"] {
+    padding: 0.5rem 2rem;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    background: #2e9cca;
+    color: white; }
+
+.lkh-footer {
+  color: #29648a;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem; }
 
