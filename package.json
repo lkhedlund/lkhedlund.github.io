@@ -20,7 +20,7 @@
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^5.0.0",
     "mini-css-extract-plugin": "^1.2.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^6.0.7",
